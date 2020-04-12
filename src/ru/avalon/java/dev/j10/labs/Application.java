@@ -13,9 +13,9 @@ public class Application {
         FibonacciInitializer fibonacciInitializer = new FibonacciInitializer();
 		fibonacciInitializer.initialize(array);
 		int sum = 0;
-		for (int text : array) {
-			System.out.print(text + " ");
-			sum = sum + text;
+		for (int element : array) {
+			System.out.print(element + " ");
+			sum = sum + element;
 		}
 		System.out.println("\nСумма элементов массива: " + sum);
 
@@ -26,8 +26,8 @@ public class Application {
 		bubbleSort.sort(array);
 
 		System.out.println("\nСортировка пузырьком: ");
-		for (int text : array) {
-			System.out.print(text + " ");
+		for (int element : array) {
+			System.out.print(element + " ");
 		}
 		System.out.println("\n Инициализация: ");
 		randomInitializer.initialize(array);
@@ -35,8 +35,8 @@ public class Application {
 		SelectionSort selectionSort = new SelectionSort();
 		selectionSort.sort(array);
 		System.out.println("\nСортировка выбором: ");
-		for (int text : array) {
-			System.out.print(text + " ");
+		for (int element : array) {
+			System.out.print(element + " ");
 		}
 
 		System.out.println("\n Инициализация: ");
@@ -45,8 +45,8 @@ public class Application {
 		ShellSort shellSort= new ShellSort();
 		selectionSort.sort(array);
 		System.out.println("\nСортировка по Шеллу: ");
-		for (int text : array) {
-			System.out.print(text + " ");
+		for (int element : array) {
+			System.out.print(element + " ");
 		}
 
 	    /*
