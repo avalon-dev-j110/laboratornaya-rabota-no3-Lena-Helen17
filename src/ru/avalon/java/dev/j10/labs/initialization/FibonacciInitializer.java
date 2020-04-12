@@ -39,6 +39,8 @@ public class FibonacciInitializer implements Initializer {
            n0 = n1;
            n1 = n2;
         }
+        n0 = 0;
+        n1 = 1;
         /*
          * TODO(Студент): Реализовать метод initialize класса FibonacciInitializer
          */
