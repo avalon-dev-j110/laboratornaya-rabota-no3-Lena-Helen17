@@ -21,6 +21,20 @@ public class ShellSort implements Sort {
      * {@inheritDoc}
      */
     public void sort(int[] array) {
+
+        int b=array.length/2;
+        while (b >0) {
+            for (int i = 0; i < array.length; i++){
+                int j = i;
+                while ((j >= 0) && (array[j] > array[j + b] )){
+                    int temp = array[j];
+                    array[j] = array[j+b];
+                    array[j+b] = temp;
+                    j--;
+                }
+            }
+            b = b/2;
+        }
         /*
          * TODO(Студент): Реализовать метод sort класса ShellSort
          */

@@ -3,7 +3,7 @@ package ru.avalon.java.dev.j10.labs.initialization;
 import ru.avalon.java.dev.j10.labs.Initializer;
 
 /**
- * Класс, выполняющий инициализацию массива числе,
+ * Класс, выполняющий инициализацию массива чисел`1,
  * значениями последовательности Фибоначчи.
  *
  * <p>Чи́сла Фибона́ччи (иногда пишут Фибона́чи[1]) — элементы
@@ -19,6 +19,10 @@ import ru.avalon.java.dev.j10.labs.Initializer;
  * @see <a href="https://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D0%BB%D0%B0_%D0%A4%D0%B8%D0%B1%D0%BE%D0%BD%D0%B0%D1%87%D1%87%D0%B8">Числа Фибоначчи</a>
  */
 public class FibonacciInitializer implements Initializer {
+    int n0 = 0;
+    int n1 = 1;
+    int n2;
+
 
     /**
      * Выполняет инициализацию массива значениями
@@ -27,6 +31,14 @@ public class FibonacciInitializer implements Initializer {
      * @param array массив, подлежащий инициализации
      */
     public void initialize(int[] array) {
+        array[0] = n0;
+        array[1] = n1;
+        for (int i = 2; i < 20; i++) {
+           n2 = n0 + n1;
+            array[i] = n2;
+           n0 = n1;
+           n1 = n2;
+        }
         /*
          * TODO(Студент): Реализовать метод initialize класса FibonacciInitializer
          */
